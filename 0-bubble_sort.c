@@ -1,4 +1,21 @@
 #include "sort.h"
+
+/**
+* bubble_swap - swap for the bubble sort
+*
+* @first: entry int
+* @second: entry int
+*/
+
+void bubble_swap(int *first, int *second)
+{
+        int temp = 0;
+
+        temp = *first;
+        *first = *second;
+        *second = temp;
+}
+
 /**
  * bubble_sort - Bubble sort algoritm
  *
@@ -22,20 +39,4 @@ void bubble_sort(int *array, size_t size)
 
 	}
 
-}
-
-/**
-* bubble_swap - swap for the bubble sort
-*
-* @first: entry int
-* @second: entry int
-*/
-
-void bubble_swap(int *first, int *second)
-{
-	int temp = 0;
-
-	temp = *first;
-	*first = *second;
-	*second = temp;
 }
